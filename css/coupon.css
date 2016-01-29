@@ -1,0 +1,131 @@
+body, html {
+    font-family: sans-serif;
+}
+
+.mod-a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 8px;
+    height: 175px;
+    background-color: #46b359;
+    color: #fff;
+    line-height: 1;
+}
+
+.mod-a-good, .mod-a-shop {
+    background-color: #e6a117;
+}
+
+
+.mod-a-h {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2.5px;
+    background: url(//img.alicdn.com/tps/i2/TB13EBKHXXXXXX_aXXX0w1_YVXX-178-576.png) repeat-x 0 -257px;
+    background-size: 89px auto;
+}
+
+.mod-a-f {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: url(//img.alicdn.com/tps/i2/TB13EBKHXXXXXX_aXXX0w1_YVXX-178-576.png) repeat-x 0 -263px;
+    background-size: 89px auto;
+}
+
+.mod-a-ln {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 47px;
+    padding: 0 12px;
+    width: 100%;
+}
+
+.mod-a-good .mod-a-ln-bg, .mod-a-shop .mod-a-ln-bg {
+    background-position: 0 -286px;
+}
+
+
+.mod-a-ln-bg {
+    width: 100%;
+    height: 2px;
+    background: url(//img.alicdn.com/tps/i2/TB13EBKHXXXXXX_aXXX0w1_YVXX-178-576.png) repeat-x 0 -281px;
+    background-size: 89px auto;
+}
+
+
+.mod-a-good .mod-a-icon {
+    bottom: 20px;
+    width: 81px;
+    height: 88px;
+    background-position: 0 -166px;
+}
+
+.mod-a-icon {
+    position: absolute;
+    bottom: 30px;
+    right: 21px;
+    width: 87.5px;
+    height: 82px;
+    background: url(//img.alicdn.com/tps/i2/TB13EBKHXXXXXX_aXXX0w1_YVXX-178-576.png) no-repeat 0 0;
+    background-size: 89px auto;
+}
+
+.mod-a-tit {
+    padding-top: 19px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.mod-a-good .mod-a-sub-tit, .mod-a-shop .mod-a-sub-tit {
+    background-color: #e6a117;
+}
+
+.mod-a-sub-tit {
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    padding: 0 25px;
+    background-color: #46b359;
+    font-size: 12px;
+    color: rgba(255,255,255,.7);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.mod-a-val {
+    position: absolute;
+    bottom: 39px;
+    left: 16px;
+}
+
+.mod-a-val .price {
+    font-size: 35px;
+    color: #fff;
+}
+
+.price {
+    color: #3d4245;
+    font-size: 24px;
+}
+
+.mod-a-val .price span {
+    font-size: 18px;
+}
+
+.mod-a-tip {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 14px;
+}
+
+

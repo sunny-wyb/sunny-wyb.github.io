@@ -2,9 +2,40 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/coupon.css" />
     <title></title>
 </head>
 <body>
-
+<div class="coupons-container">
+    <script>
+        $(function() {
+            var ele = $('\
+            <div id="coupon">\
+                    <div class="mod-a mod-a-good">\
+                    <div class="mod-a-h"></div>\
+            <div class="mod-a-f"></div>\
+            <div class="mod-a-ln">\
+                    <div class="mod-a-ln-bg"></div>\
+            </div>\
+            <div class="mod-a-icon"></div>\
+            <div class="mod-a-tit">foot宝宝商品优惠券</div>\
+            <div class="mod-a-sub-tit">2016.01.26前有效</div>\
+            <div class="mod-a-val"><span class="price"><span>￥</span>3</span></div>\
+            <div class="mod-a-tip">满 60 使用</div>\
+            </div>\
+            </div>\
+            ')
+            $('.coupons-container').append(ele);
+            $('.coupons-container').append(ele.clone());
+        });
+    </script>
+</div>
 </body>
 </html>
