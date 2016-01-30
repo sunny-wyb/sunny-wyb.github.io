@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
 </head>
 <body style="height:100%;">
-<div style="height:100%;background-color:#efeff4;">
+<div id='main-container' style="height:100%;background-color:#efeff4;display:none;">
 <div>
     <img src="image/navigator.png" style="width:100%;"/>
 </div>
@@ -23,11 +23,18 @@
     function getUrlParam(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
         var r = window.location.search.substr(1).match(reg); //匹配目标参数
-        console.log(r[0]);
-        console.log(r[1]);
 
         if (r != null) return unescape(r[2]);
         return null; //返回参数值
+    }
+
+    function isWeiXin(){
+        var ua = window.navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     var target = '';
@@ -41,7 +48,12 @@
 
     }
 
-//    window.location.href = target;
+    if (!isWeiXin()) {
+        window.location.href = target;
+    }
+    else {
+        document.getElementById("main-container").style.display='block';
+    }
 </script>
 </body>
 </html>
