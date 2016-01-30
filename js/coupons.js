@@ -1,5 +1,5 @@
 $(function () {
-    for (var i=0 ; i<datas.length ; i++){
+    for (var i = 0; i < datas.length; i++) {
         var data = datas[i];
         var ele = $('\
             <li><div id="coupon">\
@@ -16,8 +16,8 @@ $(function () {
             <div class="mod-a-tip">' + data['condition'] + '</div>\
             </div>\
             </div>\
-            <div style="margin:0 8px;"><img src="' + data['img']+ '" style="width:100%;"/></div>\
+            <div style="margin:0 8px;"><a href="taobaobridge.html?type=offer&offer_id=523924009712"><img src="' + data['img'] + '" style="width:100%;"/></div>\
             </li>')
         $('.coupons-container ul').append(ele);
-    };
+    }
 });

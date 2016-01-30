@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+</head>
+<body style="height:100%;">
+<div style="height:100%;background-color:#efeff4;">
+<div>
+    <img src="image/navigator.png" style="width:100%;"/>
+</div>
+<div>
+    Foot宝宝
+    </div>
+    </div>
+<script>
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg); //匹配目标参数
+        console.log(r[0]);
+        console.log(r[1]);
+
+        if (r != null) return unescape(r[2]);
+        return null; //返回参数值
+    }
+
+    var target = '';
+
+    var type = getUrlParam('type');
+    if (type === 'offer') {
+        var offerId = getUrlParam('offer_id');
+        target = 'https://h5.m.taobao.com/awp/core/detail.htm?&id=' + offerId;
+    }
+    else if (type === 'coupon') {
+
+    }
+
+//    window.location.href = target;
+</script>
+</body>
+</html>
