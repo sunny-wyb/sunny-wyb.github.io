@@ -10,7 +10,7 @@ $(function () {
                     <div class="mod-a-ln-bg"></div>\
             </div>\
             <div class="mod-a-icon"></div>\
-            <div class="mod-a-tit">' + data['name'] + i + '</div>\
+            <div class="mod-a-tit">' + data['name'] + '</div>\
             <div class="mod-a-sub-tit">' + data['valid'] + '</div>\
             <div class="mod-a-val"><span class="price"><span>￥</span>' + data['discount'] + '</span></div>\
             <div class="mod-a-tip">' + data['condition'] + '</div>\
