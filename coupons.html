@@ -14,10 +14,12 @@
 </head>
 <body>
 <div class="coupons-container">
+    <ul>
+    </ul>
     <script>
         $(function() {
             var ele = $('\
-            <div id="coupon">\
+            <li><div id="coupon">\
                     <div class="mod-a mod-a-good">\
                     <div class="mod-a-h"></div>\
             <div class="mod-a-f"></div>\
@@ -31,9 +33,10 @@
             <div class="mod-a-tip">满 60 使用</div>\
             </div>\
             </div>\
-            ')
-            $('.coupons-container').append(ele);
-            $('.coupons-container').append(ele.clone());
+            <div style="margin:0 8px;"><img src="https://img.alicdn.com/imgextra/i4/1789418796/TB20Kt4hFXXXXbKXpXXXXXXXXXX_!!1789418796.jpg" style="width:100%;"/></div>\
+            </li>')
+            $('.coupons-container ul').append(ele);
+            $('.coupons-container ul').append(ele.clone());
         });
     </script>
 </div>

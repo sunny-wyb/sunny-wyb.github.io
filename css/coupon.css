@@ -129,3 +129,9 @@ body, html {
 }
 
 
+
+/*¿ò¼Ü*/
+.coupons-container>ul>li {
+    margin-bottom:20px;
+    border-bottom:1px solid #e3e3e3;
+}
