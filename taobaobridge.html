@@ -40,6 +40,7 @@
     var target = '';
 
     var type = getUrlParam('type');
+    console.log(type);
     if (type === 'offer') {
         var offerId = getUrlParam('offer_id');
         target = 'https://h5.m.taobao.com/awp/core/detail.htm?&id=' + offerId;
@@ -47,7 +48,7 @@
     else if (type === 'coupon') {
         var sellerId = getUrlParam('seller_id');
         var activityId = getUrlParam('activity_id');
-        targe = 'https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId' + sellerId + "&activityId" + activityId;
+        target = 'https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=' + sellerId + "&activityId=" + activityId;
     }
 
     if (!isWeiXin()) {
